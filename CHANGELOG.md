@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Batch consecutive tool-result images after all tool results on the generate transport, preventing interleaved user messages from breaking multi-tool turns with "Tool result is missing".
+
 - Add display pricing for DeepSeek V4.1 Flash, Qwen 3.8 Max 0902, Gemini 3.8 Flash, Muse Spark 1.3 variants, LongCat 2.0 free, and Ling 3.0 Flash Sante free. Verify against the September 15 pricing page and live 69-model catalog; correct DeepSeek V4 Flash and Vision Exp off-peak prices to $0.15/$0.60 with $0.003 cache reads per million tokens.
 
 - Refresh model capabilities to `command-code@1.54.0`: add DeepSeek V4.1 Flash image input and `low`/`high`/`max` efforts, GPT-6 Astra capability metadata, Grok 4.6 image input, and MiniMax M3 efforts. Ling 3.0 Flash Sante is reasoning-capable with a 32K output limit but has no published selectable effort levels. Catalog metadata does not make models absent from the Provider API selectable.

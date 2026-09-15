@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Honor host-resolved image input on the generate transport, including explicit text-only restrictions; fall back to catalog metadata only when host input is absent or empty. Filter unsupported modality strings without unsafe casts.
+
 - Reset the generate transport's idle timeout on every received chunk, allowing active reasoning streams to exceed the timeout overall while still aborting stalled streams (#87).
 
 - Batch consecutive tool-result images after all tool results on the generate transport, preventing interleaved user messages from breaking multi-tool turns with "Tool result is missing".
